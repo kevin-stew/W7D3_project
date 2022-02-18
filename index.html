@@ -13,9 +13,11 @@
 <script src="js/main.js" defer></script>
 <title>Ranger API Call</title>
 </head>
-<body>
-
-    <h1 class="text-center">  F1 Racer API </h1>
+<body style="padding:5em">
+    <img src="images/flag1.gif" style="height:10em; float: right;">
+    <img src="images/flag1.gif" style="height:10em; float: left; 
+    -webkit-transform: scaleX(-1); transform: scaleX(-1);">
+    <h1 class="text-center" >  F1 Racer API </h1>
     <!-- Ranger Data HTML Elements -->
     <div class="container">
         <div class="row">
@@ -24,7 +26,7 @@
                 <!-- <button class="btn btn-danger mx-3" onclick="clearData()">Clear Data</button> -->
 
                 <!--Using The DOM to Grab Form Data-->
-                <form name="testData" id="racerDataForm">
+                <form name="testData" id="racerDataForm" class="text-center">
                     <label for="season">Season</label>
                     <input type="text" name="season" id="season">
 
@@ -47,64 +49,17 @@
                         <th scope="col">Points</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                        <th scope="row">1</th>
-                        <td>{Driver.driverId} </td>
-                        <td>USA</td>
-                        <td>Pontiac</td>
-                        <td>501</td>
-                        </tr>
 
-
-                        <tr>
-                        <th scope="row">2</th>
-                        <td>Otto</td>
-                        <td>DE</td>
-                        <td>Buick</td>
-                        <td>423</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td colspan="1">Florian</td>
-                        <td>CH</td>
-                        <td>Saturn</td>
-                        <td>200</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">4</th>
-                        <td colspan="1">Juan</td>
-                        <td>MX</td>
-                        <td>GMC</td>
-                        <td>184</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">5</th>
-                        <td colspan="1">Timothy Gibbs</td>
-                        <td>GB</td>
-                        <td>Mini</td>
-                        <td>198</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">6</th>
-                        <td colspan="1">Johannes</td>
-                        <td>FA</td>
-                        <td>Skoda</td>
-                        <td>180</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">7</th>
-                        <td colspan="1">Bob</td>
-                        <td>CA</td>
-                        <td>Tesla</td>
-                        <td>172</td>
-                        </tr>
-
+                    <tbody class="driver-list">
+                        <!-- html from JavaScript gets inserted here -->
                     </tbody>
+
                     </table>
 
-                <section class="list-group text-center driver-list">  <!-- // -->
+                    <!-- from ranger class exercise -->
+                <section class="list-group text-center driver-list">  
                     <!-- API END -->
+
                 </section>
 
             </div>
@@ -116,3 +71,62 @@
 </body>
 </html>
 
+
+
+<!-- <tbody>
+    <tr>
+    <th scope="row">1</th>
+    <td>{Driver.driverId} </td>
+    <td>USA</td>
+    <td>Pontiac</td>
+    <td>501</td>
+    </tr>
+
+    <tr>
+    <th scope="row">2</th>
+    <td>Otto</td>
+    <td>DE</td>
+    <td>Buick</td>
+    <td>423</td>
+    </tr>
+
+    <tr>
+    <th scope="row">3</th>
+    <td colspan="1">Florian</td>
+    <td>CH</td>
+    <td>Saturn</td>
+    <td>200</td>
+    </tr>
+
+    <tr>
+    <th scope="row">4</th>
+    <td colspan="1">Juan</td>
+    <td>MX</td>
+    <td>GMC</td>
+    <td>184</td>
+    </tr>
+
+    <tr>
+    <th scope="row">5</th>
+    <td colspan="1">Timothy Gibbs</td>
+    <td>GB</td>
+    <td>Mini</td>
+    <td>198</td>
+    </tr>
+
+    <tr>
+    <th scope="row">6</th>
+    <td colspan="1">Johannes</td>
+    <td>FA</td>
+    <td>Skoda</td>
+    <td>180</td>
+    </tr>
+
+    <tr>
+    <th scope="row">7</th>
+    <td colspan="1">Bob</td>
+    <td>CA</td>
+    <td>Tesla</td>
+    <td>172</td>
+    </tr>
+</tbody> -->
